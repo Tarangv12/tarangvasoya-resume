@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tarang Vasoya | Cloud Security Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#020617;
+color:white;
+overflow-x:hidden;
+}
+
+/* animated background */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:12px 5%;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+nav h2{
+color:#38bdf8;
+font-size:18px;
+margin-bottom:8px;
+}
+
+nav ul{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+justify-content:center;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:13px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+gap:20px;
+padding-top:120px;
+padding-left:8%;
+padding-right:8%;
+}
+
+.hero-text{
+max-width:450px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero span{
+background:linear-gradient(90deg,#38bdf8,#06b6d4);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero h2{
+font-size:16px;
+margin-top:8px;
+}
+
+.hero p{
+margin-top:15px;
+font-size:13px;
+color:#cbd5f5;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 22px;
+background:#38bdf8;
+color:black;
+border-radius:25px;
+font-weight:600;
+font-size:13px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* PROFILE IMAGE */
+
+.profile-photo{
+width:170px;
+height:170px;
+object-fit:cover;
+border-radius:50%;
+border:4px solid #38bdf8;
+box-shadow:
+0 0 20px #38bdf8,
+0 0 40px #0ea5e9;
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 6%;
+text-align:center;
+}
+
+h2{
+font-size:24px;
+margin-bottom:30px;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.skill{
+background:rgba(255,255,255,0.05);
+padding:15px;
+border-radius:10px;
+font-size:13px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.skill:hover{
+background:#38bdf8;
+color:black;
+transform:translateY(-5px);
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:1fr;
+gap:18px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:18px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+box-shadow:0 0 20px #38bdf8;
+}
+
+.card h3{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:13px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:8px;
+font-size:13px;
+color:#cbd5f5;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+padding:20px;
+text-align:center;
+font-size:12px;
+background:#020617;
+}
+
+/* TABLET & DESKTOP IMPROVEMENT */
+
+@media (min-width:768px){
+
+nav{
+flex-direction:row;
+justify-content:space-between;
+padding:20px 10%;
+}
+
+nav h2{
+margin-bottom:0;
+font-size:22px;
+}
+
+nav ul{
+gap:25px;
+}
+
+.hero{
+flex-direction:row;
+text-align:left;
+gap:60px;
+padding:0 10%;
+height:100vh;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.profile-photo{
+width:260px;
+height:260px;
+}
+
+.skills{
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+
+.projects{
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Tarang Vasoya</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<img src="tarang.jpg" class="profile-photo">
+
+<div class="hero-text">
+
+<h1>Hello I'm <span>Tarang Vasoya</span></h1>
+
+<h2><span id="typing"></span></h2>
+
+<p>
+Cloud Security & DevOps enthusiast focused on Kubernetes,
+Docker containerization and secure AWS infrastructure.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I don't just build cloud infrastructure; I secure it I combine strong Networking 🌐 and Linux 🐧 fundamentals with modern DevOps tools like Kubernetes ☸️, Docker 🐳, and Jenkins ⚙️. My goal is to master Cloud Security, automating protection into every step of the pipeline 🚀. I am self-taught, hands-on, and ready to build resilient systems 💻.
+    
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">AWS Cloud</div>
+<div class="skill">Docker</div>
+<div class="skill">Kubernetes</div>
+<div class="skill">Linux</div>
+<div class="skill">Python</div>
+<div class="skill">Shell Scripting</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">Networking</div>
+
+</div>
+
+</section>
+
+<!-- TOOLS -->
+
+<section id="tools">
+
+<h2>Tools</h2>
+
+<div class="skills">
+
+<div class="skill">Wireshark</div>
+<div class="skill">Cisco</div>
+<div class="skill">Docker</div>
+<div class="skill">GitHub Copilot</div>
+<div class="skill">Cursor</div>
+<div class="skill">Anigravity</div>
+<div class="skill">VS Code</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Kubernetes Voting App</h3>
+<p>Containerized microservice voting system deployed using Kubernetes.</p>
+</div>
+
+<div class="card">
+<h3>Iron Dome Simulation</h3>
+<p>Auto scaling microservice defense simulation using Kubernetes.</p>
+</div>
+
+<div class="card">
+<h3>Cafe Management System</h3>
+<p>Python OOP system for billing and inventory.</p>
+</div>
+
+<div class="card">
+<h3>ATM Banking System</h3>
+<p>Secure ATM simulation built using Python.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p>Email: tarangvasoya122@gmail.com</p>
+<p>Phone: 9274240911</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/tarang-vasoya-513636375" target="_blank">
+linkedin.com/in/tarang-vasoya
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/Tarangv12" target="_blank">
+github.com/Tarangv12
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Tarang Vasoya | Cloud Security Engineer</p>
+
+</footer>
+
+<script>
+
+new Typed("#typing",{
+
+strings:[
+"Cloud security Enthusiast",
+"Tarang vasoya portfolio",
+"Devops Explorer",
+"AWS Cloud Engineer",
+"Networking expert",
+
+],
+
+typeSpeed:70,
+backSpeed:40,
+loop:true
+
+});
+
+particlesJS("particles-js",{
+
+particles:{
+number:{value:80},
+size:{value:3},
+color:{value:"#38bdf8"},
+line_linked:{enable:true,color:"#38bdf8"},
+move:{speed:1}
+}
+
+});
+
+</script>
+
+</body>
+</html>
